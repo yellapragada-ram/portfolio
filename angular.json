@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "portfolio-snippets:build:production"
+              "buildTarget": "portfolio-snippets:build:production"
             },
             "development": {
-              "browserTarget": "portfolio-snippets:build:development"
+              "buildTarget": "portfolio-snippets:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "portfolio-snippets:build"
+            "buildTarget": "portfolio-snippets:build"
           }
         },
         "test": {
@@ -100,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

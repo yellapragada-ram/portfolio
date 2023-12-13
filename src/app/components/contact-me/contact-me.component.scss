@@ -1,0 +1,10 @@
+.textarea-border:focus{
+    outline-style: none;
+    border-color: #FFB400;
+}
+
+:host{
+    ::ng-deep .button-class{
+        background-color: #FFB400;
+    }
+}

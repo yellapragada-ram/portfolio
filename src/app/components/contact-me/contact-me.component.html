@@ -1,0 +1,67 @@
+<hr style="max-width: 40%; margin-top: 150px;">
+
+<div class="mx-auto text-center relative py-8">
+    <h1 class="text-3xl font-semibold text-white">Contact Me</h1>
+</div>
+
+<div class="flex gap-8" style="height: 100%; margin-left: 10%; padding-bottom: 10%; margin-right: 10%;">
+
+    <!-- Contact Details -->
+    <div style="flex: 33.33%; height: 100%; width: 20px;" class="flex flex-column text-white">
+        <h3>DONT BE SHY</h3>
+        <p class="text-left">Feel free to get in touch with me. I am always open to discussing new projects, 
+           creative ideas or opportunities to be part of your visions.</p>
+        <div class="flex flex-row" style="height: 100%; width: 100%;">
+            <div class="pi pi-envelope text-5xl text-yellow-900 w-4 flex align-items-center justify-content-center"></div>
+            <div class="h-3 w-full pl-4">
+                <h3>Mail Me</h3>
+                <p>yellapragada.ramarao&#64;gmail.com</p>
+            </div>
+        </div>
+
+        <div class="flex flex-row" style="height: 100%; width: 100%; margin-left: -10px;">
+            <div class="pi pi-phone text-5xl text-yellow-900 w-4 flex align-items-center justify-content-center"></div>
+            <div class="h-3 w-full ml-2">
+                <h3>Call Me</h3>
+                <p>8686816665</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div style="flex: 66.66%; height: 100%; width: 100%;" class="mx-auto">
+        <div class="grid">
+            <div class="col-4">
+                <div class="p-3 border-round-2xl">
+                    <input type="text" pInputText [(ngModel)]="value1" class="text-center border-round-3xl text-left textarea-border text-white" style="background-color: #252525; border-color: #252525;" placeholder="YOUR NAME" />
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-3 border-round-2xl">
+                    <input type="text" pInputText [(ngModel)]="value2" class="text-center border-round-3xl text-left textarea-border text-white" style="background-color: #252525; border-color: #252525;" placeholder="YOUR EMAIL"/>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-3 border-round-2xl border-none">
+                    <input type="text" pInputText [(ngModel)]="value3" class="border-round-3xl textarea-border text-white" style="background-color: #252525; border-color: #252525;" placeholder="YOUR SUBJECT"/>
+                </div>
+            </div>
+            <div class="col-12">
+                    <textarea id="float-input" rows="9" cols="30" 
+                    placeholder="YOUR MESSAGE" pInputTextarea [(ngModel)]="value4" class="border-round-3xl p-3 text-base textarea-border text-white" 
+                    style="height: 100%; width: 100%; background-color: #252525; border-color: #252525;"></textarea>           
+            </div>
+
+        </div>
+        
+        <!-- Send Message Button -->
+        <div class="card pl-1 pt-4 justify-content-center">
+            <p-button
+              label="DOWNLOAD CV"
+              styleClass="button-class"
+              [rounded]="true"
+            ></p-button>
+        </div>
+    
+    </div>
+</div>
