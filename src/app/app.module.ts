@@ -18,21 +18,18 @@ import { MainComponent } from './components/main/main.component';
 
 import { AboutMeComponent } from './components/about-me/about-me.component';
 
-import { TestComponent } from './components/test/test.component';
 
 import { ProjectPageComponent } from './components/project-page/project-page.component';
 
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 
 import { InputTextModule } from 'primeng/inputtext';
-import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
     MainComponent,
-    TestComponent,
     ProjectPageComponent,
     ContactMeComponent],
   imports: [
@@ -43,7 +40,6 @@ import { AppRoutingModule } from './app-routing.module';
     SplitterModule,
     KnobModule,
     InputTextModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],
